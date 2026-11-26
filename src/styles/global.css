@@ -1,0 +1,5 @@
+/* Global entry stylesheet. Imports the design system in order. */
+@import "./variables.css";
+@import "./base.css";
+@import "./utilities.css";
+@import "./animations.css";

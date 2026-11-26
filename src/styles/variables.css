@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Design Tokens
+   Central place for colors, typography, spacing and layout values.
+   Breakpoints used across the project (CSS variables cannot be used in
+   media queries, so they are documented here):
+   - 640px  : small tablets / large phones
+   - 768px  : tablets
+   - 1024px : laptops and desktops
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-bg: #0b0f14;
+  --color-surface: #121923;
+  --color-surface-hover: #17202c;
+  --color-border: #1e2937;
+  --color-text: #e6edf3;
+  --color-text-muted: #8b98a5;
+
+  --color-amber: #f2a541;
+  --color-amber-soft: rgba(242, 165, 65, 0.12);
+  --color-teal: #4fd1c5;
+  --color-teal-soft: rgba(79, 209, 197, 0.12);
+
+  /* Font families */
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Courier New", monospace;
+
+  /* Font sizes (fluid) */
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
+  --text-3xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-hero: clamp(2.6rem, 1.8rem + 4vw, 4.5rem);
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --section-padding: clamp(4rem, 3rem + 5vw, 7rem);
+
+  /* Layout */
+  --container-width: 1120px;
+  --navbar-height: 72px;
+
+  /* Shape and motion */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --transition: 200ms ease;
+}
